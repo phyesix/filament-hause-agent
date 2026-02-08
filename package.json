@@ -1,0 +1,20 @@
+{
+    "name": "filament-hause-agent",
+    "version": "1.0.0",
+    "description": "Homelab agent for Filament Hause - bridges Bambulab printer MQTT to cloud",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "dev": "ts-node src/index.ts"
+    },
+    "dependencies": {
+        "mqtt": "^5.3.0",
+        "node-fetch": "^3.3.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "typescript": "^5.0.0",
+        "ts-node": "^10.9.0"
+    }
+}

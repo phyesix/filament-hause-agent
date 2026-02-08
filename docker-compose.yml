@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  filament-hause-agent:
+    build: .
+    container_name: filament-hause-agent
+    restart: unless-stopped
+    environment:
+      # Bambulab Printer Settings
+      - PRINTER_IP=${PRINTER_IP}
+      - PRINTER_SERIAL=${PRINTER_SERIAL}
+      - PRINTER_ACCESS_CODE=${PRINTER_ACCESS_CODE}
+      
+      # Cloud Settings
+      - API_URL=${API_URL:-https://filament-hause.vercel.app}
+      - AGENT_TOKEN=${AGENT_TOKEN}
+      
+      # Optional
+      - SYNC_INTERVAL=${SYNC_INTERVAL:-5000}
+    
+    # For debugging, you can mount logs
+    # volumes:
+    #   - ./logs:/app/logs
