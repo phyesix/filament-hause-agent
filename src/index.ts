@@ -15,7 +15,7 @@ const config = {
     printerAccessCode: process.env.PRINTER_ACCESS_CODE || "",
 
     // Cloud settings
-    apiUrl: process.env.API_URL || "https://filament-hause.vercel.app",
+    apiUrl: process.env.API_URL || "https://filament-house.netlify.app",
     agentToken: process.env.AGENT_TOKEN || "",
 
     // Sync interval (ms)

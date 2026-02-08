@@ -12,7 +12,7 @@ services:
       - PRINTER_ACCESS_CODE=${PRINTER_ACCESS_CODE}
       
       # Cloud Settings
-      - API_URL=${API_URL:-https://filament-hause.vercel.app}
+      - API_URL=${API_URL:-https://filament-house.netlify.app}
       - AGENT_TOKEN=${AGENT_TOKEN}
       
       # Optional
